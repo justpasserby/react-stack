@@ -1,3 +1,3 @@
 # react-stack
 
--[react + koa]
+-- [react + koa]

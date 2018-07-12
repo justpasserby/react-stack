@@ -1,24 +1,49 @@
 {
   "name": "react-stack",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:justpasserby/react-stack.git",
+  "private": true,
   "author": "Jace",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production"
+    "start": "npm run dev",
+    "build": "node scripts/build.js",
+    "dev": "webpack-dev-server --config scripts/start.js"
   },
   "dependencies": {
     "lodash": "^4.17.10",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-hot-loader": "^4.1.0",
+    "babel-loader": "^7.1.4",
+    "chalk": "^2.4.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "fork-ts-checker-webpack-plugin": "^0.4.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-notifier": "^5.2.1",
+    "ora": "^2.1.0",
+    "portfinder": "^1.0.13",
+    "prettier": "^1.13.7",
+    "react-hot-loader": "^4.3.3",
+    "rimraf": "^2.6.2",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2",
+    "url-loader": "^1.0.1",
     "webpack": "^4.14.0",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
   }
 }
